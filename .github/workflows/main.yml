@@ -6,6 +6,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: pocket-ai-pro
+  cancel-in-progress: true
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
